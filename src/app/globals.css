@@ -16,14 +16,41 @@
   }
 }
 
+@font-face {
+  font-family: "RedditMono";
+  src: url(/font/RedditMono-Regular.ttf);
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RedditMono";
+  src: url(/font/RedditMono-Medium.ttf);
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RedditMono";
+  src: url(/font/RedditMono-Light.ttf);
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RedditMono";
+  src: url(/font/RedditMono-ExtraLight.ttf);
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #121212
 }
 
 @layer utilities {
