@@ -1,4 +1,5 @@
 import NotesCard from "@/components/NotesCard";
+import { getUserData } from "@/util/databaseFunctions";
 
 export const data = [
   {
@@ -43,7 +44,8 @@ export const data = [
   },
 ]
 
-export default function Home() {
+export default async function Home() {
+  console.log(await getUserData())
   return (
     <main className="flex min-h-screen flex-col items-center p-8">
       <section className="mt-10 max-w-[720px]">
