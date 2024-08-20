@@ -49,7 +49,6 @@ export default async function Home() {
 
   const headersList = headers()
   const referer = headersList.get('referer')
-  console.log(referer)
 
   const notesData = await getNotesData()
 
