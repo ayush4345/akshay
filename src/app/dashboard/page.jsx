@@ -1,5 +1,6 @@
 "use client"
 
+import { createNote } from '@/util/databaseFunctions';
 import React, { useState } from 'react';
 
 const DashboardPage = () => {
@@ -19,10 +20,10 @@ const DashboardPage = () => {
         setContent(e.target.value);
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async(e) => {
         e.preventDefault();
-        // Add your logic here to handle the form submission
-        // You can use the 'title', 'description', and 'content' values to perform any necessary actions
+        
+        await createNote(title, content, description)
     };
 
     return (

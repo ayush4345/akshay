@@ -1,8 +1,8 @@
 import axios from "axios";
 
-export const getUserData = async () => {
+export const getNotesData = async () => {
     try {
-        const response = await axios.get('http://localhost:3000/api/get_notes');
+        const response = await axios.get(`${process.env.NEXT_PUBLIC_APP_URL}/api/get_notes`);
         const data = response.data;
         return data;
     } catch (error) {
@@ -11,14 +11,27 @@ export const getUserData = async () => {
     }
 };
 
-export const createPokerGame = async (title, content, description) => {
+export const getNoteDataBySlug = async (slug) => {
     try {
-        const response = await axios.post('http://localhost:3000/api/create-game', {
+        console.log(slug)
+        const response = await axios.post(`${process.env.NEXT_PUBLIC_APP_URL}/api/get_note`,{slug: slug});
+        const data = response.data;
+        return data;
+    } catch (error) {
+        console.error('Error getting user data:', error);
+        return error;
+    }
+};
+
+export const createNote = async (title, content, description) => {
+    try {
+        const response = await axios.post(`${process.env.NEXT_PUBLIC_APP_URL}/api/add_note`, {
             title: title,
             content: content,
             description: description,
         });
         const data = response.data;
+        console.log(data)
         if (!data?.success) {
             throw new Error('Error creating note. API response is not successful.');
         }

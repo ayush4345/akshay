@@ -8,7 +8,7 @@ export async function POST(req) {
         data: {
             title: title,
             description: description,
-            publishedOn: new Date().toLocaleDateString(),
+            publishedOn: new Date().toISOString(),
             content: content,
             slug: title.replace(" ", "_")
         },

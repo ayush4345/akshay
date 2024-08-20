@@ -21,5 +21,6 @@ model Note {
   content     String
   published   Boolean  @default(true)
   publishedOn DateTime
-  slug        String
+  slug        String   @unique
+  readingTime Int @default(1)
 }
