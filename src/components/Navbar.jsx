@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navbar() {
     return (
-        <nav className="flex justify-between w-full mt-4 mb-8 px-3">
+        <nav className="flex justify-between w-full mt-4 mb-8 px-3 md:px-8">
             <Link href="/" className="text-inherit no-underline text-2xl font-medium">
                 theproductimp
             </Link>
