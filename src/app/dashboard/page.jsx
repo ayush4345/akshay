@@ -35,7 +35,7 @@ const DashboardPage = () => {
                     <input className='rounded text-black p-2' type="text" id="title" value={title} onChange={handleTitleChange} />
                 </div>
                 <div className='flex flex-col mt-4'>
-                    <label htmlFor="description">Description:</label>
+                    <label htmlFor="description">Meta Description:</label>
                     <textarea className='rounded text-black p-2' type="text" id="description" value={description} onChange={handleDescriptionChange} />
                 </div>
                 <div className='flex flex-col mt-4'>
