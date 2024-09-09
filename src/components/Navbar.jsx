@@ -7,7 +7,7 @@ export default function Navbar() {
                 theproductimp
             </Link>
             <div className="flex gap-5 font-light">
-                <Link href="/archives" className="text-inherit no-underline">
+                <Link href="/archives" className="text-inherit no-underline hover:font-semibold">
                     Archives
                 </Link>
                 {/* <span>Essays</span> */}

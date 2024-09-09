@@ -2,6 +2,16 @@ import NotesCard from "@/components/NotesCard";
 import { getNotesData } from "@/util/databaseFunctions";
 import { headers } from 'next/headers'
 
+export const metadata = {
+  title: 'Archives',
+  description: 'The only Poker guide you need to master the game.',
+  openGraph: {
+    title: 'Archives',
+    description: 'The only Poker guide you need to master the game.',
+    type: 'website',
+  },
+};
+
 export const data = [
   {
     "title": "One up the Circle",
