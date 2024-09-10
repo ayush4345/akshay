@@ -12,49 +12,6 @@ export const metadata = {
   },
 };
 
-export const data = [
-  {
-    "title": "One up the Circle",
-    "description": "Anyone who’s spent some time working as product manager, especially those who have moved around a bit, knows that the function can be vastly different depending on the product, the team, and the company they’re at.",
-    "slug": "one_up_the_circle",
-  },
-  {
-    "title": "One up the Circle",
-    "slug": "one_up_the_circle",
-    "description": "Anyone who’s spent some time working as product manager, especially those who have moved around a bit, knows that the function can be vastly different depending on the product, the team, and the company they’re at."
-  },
-  {
-    "title": "One up the Circle",
-    "slug": "one_up_the_circle",
-    "description": "Anyone who’s spent some time working as product manager, especially those who have moved around a bit, knows that the function can be vastly different depending on the product, the team, and the company they’re at."
-  },
-  {
-    "title": "One up the Circle",
-    "slug": "one_up_the_circle",
-    "description": "Anyone who’s spent some time working as product manager, especially those who have moved around a bit, knows that the function can be vastly different depending on the product, the team, and the company they’re at."
-  },
-  {
-    "title": "One up the Circle",
-    "slug": "one_up_the_circle",
-    "description": "Anyone who’s spent some time working as product manager, especially those who have moved around a bit, knows that the function can be vastly different depending on the product, the team, and the company they’re at."
-  },
-  {
-    "title": "One up the Circle",
-    "slug": "one_up_the_circle",
-    "description": "Anyone who’s spent some time working as product manager, especially those who have moved around a bit, knows that the function can be vastly different depending on the product, the team, and the company they’re at."
-  },
-  {
-    "title": "One up the Circle",
-    "slug": "one_up_the_circle",
-    "description": "Anyone who’s spent some time working as product manager, especially those who have moved around a bit, knows that the function can be vastly different depending on the product, the team, and the company they’re at."
-  },
-  {
-    "title": "One up the Circle",
-    "slug": "one_up_the_circle",
-    "description": "Anyone who’s spent some time working as product manager, especially those who have moved around a bit, knows that the function can be vastly different depending on the product, the team, and the company they’re at."
-  },
-]
-
 export default async function Home() {
 
   const headersList = headers()
