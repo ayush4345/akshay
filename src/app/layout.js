@@ -1,8 +1,7 @@
 import { Inter, Reddit_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-
-const inter = Inter({ subsets: ["latin"] });
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata = {
   title: "productimp",
@@ -15,7 +14,8 @@ export default function RootLayout({ children }) {
       <body className="font-[RedditMono] bg-[#121212]">
         <Navbar />
         {children}
-        </body>
+        <Analytics />
+      </body>
     </html>
   );
 }
