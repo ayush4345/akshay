@@ -20,8 +20,8 @@ export default async function Archrives() {
   const notesData = await getNotesData()
 
   return (
-    <main className="flex min-h-screen flex-col items-center p-8">
-      <section className="mt-10 w-full max-w-[720px]">
+    <main className="flex min-h-screen flex-col items-center p-8 px-5 md:px-8">
+      <section className="md:mt-10 w-full max-w-[720px]">
         <div className=" text-4xl font-semibold sticky top-0 bg-[#121212] py-3 text-white">Archives</div>
         <div className="text-white/70 text-xl mb-6 font-semibold sticky top-0 bg-[#121212]">The only Poker guide you need to master the game</div>
         {notesData && notesData.response.map((data, index) => <NotesCard key={data.id} slug={data.slug} title={data.title} description={data.content} readingTime={data.readingTime} publishedOn={data.publishedOn} />)}

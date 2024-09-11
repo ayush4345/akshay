@@ -8,13 +8,14 @@ const NotesCard = ({ title, description, slug, publishedOn, readingTime }) => {
 
     return (
         <Link href={`/archives/${slug}`}>
-            <div className='flex flex-col gap-3 mt-8'>
-                <div className='text-sm text-white/85 flex items-center gap-2'>{formattedDate}<div className='w-1 h-1 rounded-full bg-white/85'/>{readingTime} min read</div>
-                <div className='text-2xl font-medium text-white'>{title}</div>
-                <div className='text-lg font-light text-white line-clamp-4'>{description}</div>
+            <div className='hover:scale-105 transition-all duration-300'>
+                <div className='flex flex-col gap-3 mt-8'>
+                    <div className='text-sm text-white/85 flex items-center gap-2'>{formattedDate}<div className='w-1 h-1 rounded-full bg-white/85' />{readingTime} min read</div>
+                    <div className='text-2xl font-medium text-white'>{title}</div>
+                    <div className='text-lg font-light text-white line-clamp-4'>{description}</div>
+                </div>
             </div>
         </Link>
-
     );
 };
 

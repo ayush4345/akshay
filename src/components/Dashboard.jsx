@@ -42,7 +42,7 @@ const DashboardPage = () => {
                     <label htmlFor="content">Content:</label>
                     <textarea className='rounded text-black p-2' id="content" value={content} onChange={handleContentChange} />
                 </div>
-                <button type="submit" className='bg-white p-3 px-4 text-black hover:font-bold rounded-md mt-4'>Add Note</button>
+                <button type="submit" className='bg-white p-3 px-4 text-black hover:font-bold rounded-md mt-4'>Publish</button>
             </form>
         </div>
     );

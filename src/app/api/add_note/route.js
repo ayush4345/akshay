@@ -10,8 +10,8 @@ export async function POST(req) {
             description: description,
             publishedOn: new Date().toISOString(),
             content: content,
-            slug: title.replace(" ", "_"),
-            readingTime: Math.floor(content.length / 210) == 0 ? 1 : Math.floor(content.length / 210)
+            slug: title.replace(/\s+/g, "_").toLowerCase(),
+            readingTime: Math.max(1, Math.floor(content.split(/\s+/).length / 200))
         },
     });
 
