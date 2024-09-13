@@ -25,7 +25,7 @@ const NotesPage = async ({ params }) => {
     const noteData = await getNoteDataBySlug(params.noteId)
 
     return (
-        <main className='m-auto w-full max-w-[720px] flex flex-col px-3 mb-10'>
+        <main className='m-auto w-full max-w-[720px] flex flex-col px-5 mb-10'>
             <div>
                 <div className='text-3xl md:text-4xl text-white font-semibold text-left mb-8 py-3 bg-[#121212]'>
                     {noteData["response"][0].title}
