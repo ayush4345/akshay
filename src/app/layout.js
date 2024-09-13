@@ -4,8 +4,8 @@ import Navbar from "@/components/Navbar";
 import { Analytics } from "@vercel/analytics/react"
 
 export const metadata = {
-  title: "productimp",
-  description: "",
+  title: "pokerclub",
+  description: "The only Poker guide you need to master the game",
 };
 
 export default function RootLayout({ children }) {

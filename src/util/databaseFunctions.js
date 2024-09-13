@@ -23,12 +23,14 @@ export const getNoteDataBySlug = async (slug) => {
     }
 };
 
-export const createNote = async (title, content, description) => {
+export const createNote = async (title, content, description, slug, password) => {
     try {
         const response = await axios.post(`${process.env.NEXT_PUBLIC_APP_URL}/api/add_note`, {
             title: title,
             content: content,
             description: description,
+            slug: slug,
+            password: password
         });
         const data = response.data;
         console.log(data)
